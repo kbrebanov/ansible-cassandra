@@ -1,0 +1,19 @@
+---
+# tasks file for cassandra (Ubuntu specific)
+
+- name: Add DataStax apt repository
+  apt_repository: >
+    repo='deb http://debian.datastax.com/community stable main'
+    state=present
+    update_cache=yes
+  tags: cassandra
+
+- name: Add DataStax apt key
+  apt_key: >
+    url=http://debian.datastax.com/debian/repo_key
+    state=present
+  tags: cassandra
+
+- name: Install Cassandra package
+  apt: name=cassandra state=present update_cache=yes
+  tags: cassandra

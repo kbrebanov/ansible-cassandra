@@ -2,5 +2,6 @@
 # vars file for cassandra (Ubuntu specific)
 
 cassandra_packages:
+  - libjna-java
   - cassandra={{ cassandra_version }}
 cassandra_service_name: cassandra

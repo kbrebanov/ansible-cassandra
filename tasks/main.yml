@@ -13,6 +13,26 @@
   when: ansible_distribution == "Ubuntu"
   tags: cassandra
 
+- name: Create Cassandra env configuration file
+  template: >
+    src=cassandra-env.sh.j2
+    dest=/etc/cassandra/cassandra-env.sh
+    owner=root
+    group=root
+    mode=0644
+  notify: restart cassandra
+  tags: cassandra
+
+- name: Create Cassandra configuration file
+  template: >
+    src=cassandra.yaml.j2
+    dest=/etc/cassandra/cassandra.yaml
+    owner=root
+    group=root
+    mode=0644
+  notify: restart cassandra
+  tags: cassandra
+
 - name: Ensure Cassandra is started and enabled on boot
   service: name={{ cassandra_service_name }} state=started enabled=yes
   tags: cassandra

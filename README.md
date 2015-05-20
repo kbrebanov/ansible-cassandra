@@ -1,7 +1,7 @@
 cassandra
 =========
 
-Installs Apache Cassandra
+Installs and configures Apache Cassandra
 
 Requirements
 ------------

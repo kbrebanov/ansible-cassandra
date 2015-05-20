@@ -1,2 +1,5 @@
 ---
 # vars file for cassandra (Ubuntu specific)
+
+cassandra_packages:
+  - cassandra

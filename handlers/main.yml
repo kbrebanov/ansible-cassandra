@@ -1,2 +1,6 @@
 ---
 # handlers file for cassandra
+
+- name: restart cassandra
+  service: name={{ cassandra_service_name }} state=restarted
+  tags: cassandra

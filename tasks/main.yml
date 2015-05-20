@@ -12,4 +12,7 @@
 - include: Ubuntu.yml
   when: ansible_distribution == "Ubuntu"
   tags: cassandra
-  
+
+- name: Ensure Cassandra is started and enabled on boot
+  service: name={{ cassandra_service_name }} state=started enabled=yes
+  tags: cassandra

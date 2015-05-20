@@ -3,3 +3,4 @@
 
 cassandra_packages:
   - cassandra={{ cassandra_version }}
+cassandra_service_name: cassandra

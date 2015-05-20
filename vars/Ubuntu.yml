@@ -2,4 +2,4 @@
 # vars file for cassandra (Ubuntu specific)
 
 cassandra_packages:
-  - cassandra
+  - cassandra={{ cassandra_version }}

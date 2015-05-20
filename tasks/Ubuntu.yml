@@ -15,5 +15,5 @@
   tags: cassandra
 
 - name: Install Cassandra package
-  apt: name=cassandra state=present update_cache=yes
+  apt: name=cassandra state=present update_cache=yes cache_valid_time=3600
   tags: cassandra

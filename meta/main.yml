@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Kevin Brebanov
-  description: Installs and configures Apache Cassandra
+  description: Installs and configures Cassandra
   company:
   # Some suggested licenses:
   # - BSD (default)

@@ -1,7 +1,7 @@
 cassandra
 =========
 
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-kbrebanov.cassandra-660198.svg)](https://galaxy.ansible.com/list#/roles/3868)
+[![Ansible Role](https://img.shields.io/ansible/role/3868.svg)](https://galaxy.ansible.com/list#/roles/3868)
 
 Installs and configures Cassandra
 

@@ -15,7 +15,7 @@ Role Variables
 
 | Name              | Default | Description                     |
 |-------------------|---------|---------------------------------|
-| cassandra_version | 2.1.5   | Version of Cassandra to install |
+| cassandra_version | 2.2.3   | Version of Cassandra to install |
 
 Dependencies
 ------------

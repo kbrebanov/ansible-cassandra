@@ -1,4 +1,4 @@
 ---
 # defaults file for cassandra
 
-cassandra_version: 2.1.5
+cassandra_version: 2.2.3
